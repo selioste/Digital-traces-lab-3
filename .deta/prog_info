@@ -1,0 +1,1 @@
+{"id":"6495a5a1-6963-43af-9155-9cad8c8acfc7","space":41401,"runtime":"python3.9","name":"first_micro","path":"5ore4z","project":"a0u1woo0","account":"144798365827","region":"eu-central-1","deps":["flask","requests","google-api-python-client","oauth2client","python-dotenv","pytrends"],"envs":null,"public":true,"log_level":"debug","cron":""}
