@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sample Python app on Deta
 
 This work is the result of the first TP of Digital Traces. It was for us to create a sample python app on Deta.
@@ -8,3 +9,6 @@ The implementation of this app can be summarized in 4 parts:
 - Track of the application usage using google analytics
 
 For more informations, you can follow this link https://docs.deta.sh/docs/micros/getting_started/#creating-your-first-micro 
+=======
+# Digital-traces-lab-3
+>>>>>>> 72890c8067801d1eac175cf3d6d664cb1b1ee6c5
