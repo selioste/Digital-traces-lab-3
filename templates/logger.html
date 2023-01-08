@@ -1,16 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    </head>
+{% extends 'testjs.html' %}
 
-    <body>
-    </br> <form method="POST">
-        <input name="textbox_input" placeholder="Welcome to my page. Test the logs" />
-        <input type="submit" />
-    </form>
+{% block container %}
 
-    </br> <text> Hello World</text>
-        <script>console.log("{{text}}")
-        console.log("This is debug")</script>
-    </body>
-</html>
+<form method="POST">
+    <input type="text" name="log_message" placeholder="Type a message...">
+    <input type="submit" name="submit" value="Create a log">
+</form>
+
+{% if not log == "" %}
+
+<div>
+    <p>
+        Here is your message : {{log}}<br>
+        You can find the log in your web console or in Deta logs.
+    </p>
+</div>
+<script>console.log("Here is a log: {{log}}")</script>
+
+{% endif %}
+
+{% endblock %}

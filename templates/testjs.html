@@ -1,0 +1,76 @@
+<!-- Code HTML/CSS combiné -->
+<html>
+  <head>
+    <style>
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .btn-group {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .btn-primary {
+        background-color: blue;
+        color: white;
+      }
+
+      .btn-primer {
+        background-color: rgb(221, 227, 44);
+        color: white;
+      }
+
+      .btn-secondary {
+        background-color: gray;
+        color: white;
+      }
+
+      .btn-success {
+        background-color: green;
+        color: white;
+      }
+
+      .btn-danger {
+        background-color: red;
+        color: white;
+      }
+
+      .btn-warning {
+        background-color: orange;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello, i am Elioste. Welcome to my page!</h1>
+      <div class="btn-group">
+        <a href="/logger" class="btn btn-primary">Logger</a>
+        <a href="/cookies" class="btn btn-primer">Cookies</a>
+        <a href="/ganalytics" class="btn btn-secondary">Google Analystics</a>
+        <a href="/trend" class="btn btn-success">Trend</a>
+        <a href="/timerlog_image" class="btn btn-danger">TimerLog</a>
+      </div>
+      <h1>Number of visitors from Google Analystics:
+        <span style="color: rgb(236, 19, 45)">{{ visitors }}</span>
+      </h1>
+    </div>
+
+        <div class="container">
+            {% block container %}{% endblock %}
+        </div>
+
+
+
+    
+  </body>
+</html>
